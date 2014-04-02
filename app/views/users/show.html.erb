@@ -1,0 +1,9 @@
+<strong>Name:</strong> <%= @user.username.capitalize %> <br>
+<strong>Username:</strong> "<%= @user.username %>" <br>
+<strong>Email:</strong> "<%= @user.email %>" <br>
+<strong>Joined date:</strong> <%= @user.created_at.to_date.to_formatted_s(:long_ordinal) %>
+<hr>
+<strong>My shouts:</strong> <br>
+<!-- http://blog.hasmanythrough.com/2008/2/27/count-length-size -->
+I have <strong><%= @user.shouts.size %></strong> shouts.<br>
+<%= render @shouts %>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!DOCTYPE html> <html>     <%= stylesheet_link_tag
+"application", media: "all", "data-turbolinks-track" => true %>     <%=
+javascript_include_tag "application", "data-turbolinks-track" => true %>     <%=
+csrf_meta_tags %>   </head>
+
+
+	plllllorem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum 
+
+	dolor orem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum 
+	dolor orem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum 
+
+	dolor orem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum dolor orem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum dolor 
+
+ssssssssssssssssssssssssssssssssssssssssssAit ametit ametit ametit ametit ametit ametit ametit ametit amet, consectetur adipisicing elitorem ipsum dolor sit amet, 
+consectetur adipisicing elitorem ipsum dolor sit amet, consectetur 
+
+adipisicing elitorem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum dolor sit amet, consectetur adipisicing elitorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sit, est quam eum officiis 
+adipisicing elit %>
+						<%= link_to '', new_session_path %>
+						{jjjk}
+					<% end %>
+		    </div>
+  		</nav>	
+  	</header>
+			<div class="container">
+				<% flash.each do |name, msg| %>
+			    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+			  <% end %>
+				<div class="row">
+					<%= yield %>
+				</div>
+			</div>
+	
+	</body>
+</html>

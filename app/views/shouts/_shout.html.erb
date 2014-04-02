@@ -1,0 +1,9 @@
+<%= div_for shout do %>
+	<span class="name" style="font-weight:bold;">
+		<%= link_to shout.user.username.capitalize, shout.user %>
+	</span>
+	shouted: 
+	<span class="name" style="font-weight:bold;"><%= shout.body %></span>
+	<span><%= link_to time_ago_in_words(shout.created_at), shout %></span>
+	ago.
+<% end %>
