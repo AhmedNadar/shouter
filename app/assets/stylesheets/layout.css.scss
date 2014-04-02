@@ -1,8 +1,4 @@
 
-body {
-  padding-top: 20px;
-}
-
 #flash_notice {
   @extend .alert;
   @extend .alert-success;
@@ -15,7 +11,6 @@ body {
   @extend .alert;
   @extend .alert-warning;
 }
-
 .navbar .right-buttons {
   margin-right: 15px;
 }
@@ -28,7 +23,10 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 $grayMediumLight: #eaeaea;
 
-@import "bootstrap";
+body {
+  padding-top: 20px;
+  font-family: $baseFontFamily;
+}
 
 .navbar-inner {
 	@include box-shadow(none !important);
