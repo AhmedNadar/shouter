@@ -10,9 +10,6 @@
       <%= link_to "Shout OutLoud", root_path, id: "logo", class: "navbar-brand" %>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Home",     root_path %></li>
-      </ul>
       <ul class="pull-right nav navbar-nav">
       <% if signed_in?%>
         <li><%= link_to "My Dashboard", dashboard_path %></li>     

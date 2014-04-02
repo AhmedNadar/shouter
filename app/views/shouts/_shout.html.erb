@@ -1,9 +1,14 @@
-<%= div_for shout do %>
-	<span class="name" style="font-weight:bold;">
-		<%= link_to shout.user.username.capitalize, shout.user %>
-	</span>
-	shouted: 
-	<span class="name" style="font-weight:bold;"><%= shout.body %></span>
-	<span><%= link_to time_ago_in_words(shout.created_at), shout %></span>
-	ago.
-<% end %>
+<div class="panel panel-default">
+  <div class="panel-body">
+		<%= div_for shout do %>
+			<span class="name">
+				<%= link_to shout.user.username.capitalize, shout.user %>
+			</span>
+			shouted: 
+			<blockquote>
+		  	<p class="name"><%= shout.body %></p>
+		  	<footer><%= link_to time_ago_in_words(shout.created_at), shout %> ago.</footer>
+			</blockquote>
+		<% end %>
+  </div>
+</div>
